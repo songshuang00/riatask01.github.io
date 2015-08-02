@@ -15,7 +15,7 @@
     <div>
         <ul class='mainlist'>
             <li class='amenu'>
-                <a target='passage' href='design-p1.html'>
+                <a target='passage' href='passage.html'>
                     JavaScript 概述，JavaScript 是世界上最流行的脚本语言。...</a>
             </li>
             <li class='amenu'>
@@ -41,7 +41,7 @@
         $(document).ready(function(){
         $('button').find('[value="create"]').click()(function(){
         var $txt=$('<input type="text" name="passage">').text();
-        $('ul').append('<li class="amenu"><a target="passage" href="design-p1.html"><textarea class="previewer" rows="2" cols="15"></textarea></a></li>')
+        $('ul').append('<li class="amenu"><a target="passage" href="design-p1.html"></a></li>')
                                                       });
         $('button').find('[value="delete"]').click()(function(){
         $('ul li:eq(-1)').remove()
