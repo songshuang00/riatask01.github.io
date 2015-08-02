@@ -7,15 +7,15 @@ body{
     font-family:"open sans",sans-serif;
     font-size:14px;
     line-height:1.4em;
-    min-width:600px;
+    min-width:300px;
     height:800px;
+    position:relative;
+    top:0;
 }
 
 .container{
     position:relative;
-    clear:left;
-    top:0;
-    height:10%;
+    height:5%;
     color:#FFFFFF;
     background-color:#FF0000;
 }
