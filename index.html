@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head lang='en'>
+    <meta charset='UTF-8'>
+    <title>RIA-Task-01</title>
+    <link type='text/css' href='ria.css' rel='stylesheet'>
+    <script type='text/javascript' src='jquery.js'></script>
+</head>
+    
+<body>
+    <div class='adminwarp'>
+        <h1 class='bartitle'>Notebook</h1>
+        <ul class='adminmenu'>
+            <li class='amenu'><a target='plist' href='design.html'>Design</a></li>
+            <li class='amenu'><a target='plist' href='sport.html'>Sport</a></li>
+            <li class='amenu'><a target='plist' href='html0.html'>HTML</a></li>
+            <li class='amenu'><a target='plist' href='language.html'>Language</a></li>
+            <li class='amenu'><a target='plist' href='math.html'>Math</a></li>
+        </ul>
+        <center>
+            <input class='btn btn-default' type='button' value='create'>
+            <input class='btn btn-default' type='button' value='delete'>
+        </center>
+        <script>
+            $(document).ready(function(){
+            $(':button').find('[value="create"]').click()(function(){
+            var $txt=$('<input type="text" name="nplist">').text();
+            $('ul').append('<li class="menu"><a target="plist" href="nplist.html">txt</a></li>')
+                                                          });
+            $(':button').find('[value="delete"]').click()(function(){
+            $('ul li:eq(-1)').remove()
+                                                          });
+                              });
+        </script>
+    </div>
+    <iframe name='plist' class='plist' style='float:right;' width='80%'>
+        <link type='text/css' href='list.css' rel='stylesheet'></iframe>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:"open sans",sans-serif;
+    font-size:14px;
+    line-height:1.4em;
+    min-width:600px;
+    height:800px;
+}
+
+.container{
+    position:relative;
+    clear:left;
+    top:0;
+    height:10%;
+    color:#FFFFFF;
+    background-color:#FF0000;
+}
+

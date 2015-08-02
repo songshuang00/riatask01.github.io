@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head lang='en'>
+    <meta charset='UTF-8'>
+        <title>RIA-L1</title>
+        <link type='text/css' href='list.css' rel='stylesheet'>
+        <script type='text/javascript' src='jquery.js'></script>
+</head>
+
+<body>
+    <div class='navbar'>
+        <center><h1 class='bartitle'>Passage List</h1></center>
+    </div>
+    <div>
+        <ul class='mainlist'>
+            <li class='amenu'>
+                <a target='passage' href='design-p1.html'>
+                    JavaScript 概述，JavaScript 是世界上最流行的脚本语言。...</a>
+            </li>
+            <li class='amenu'>
+                <a target='passage' href='design-p1.html'>
+                    JavaScript 概述，JavaScript 是世界上最流行的脚本语言。...</a>
+            </li>
+            <li class='amenu'>
+                <a target='passage' href='design-p1.html'>
+                    JavaScript 概述，JavaScript 是世界上最流行的脚本语言。...</a>
+            </li>
+         </ul>
+    </div>
+    <script>
+        $(document).ready(function(){
+        $('ul li:siblings(":odd")').each(function(){
+            css('background-color','#FFFFFF')
+                                                     });
+                          });
+    </script>
+    <button class='pbutton' type='button' value='create'></button>
+    <button class='pbutton' type='button' value='delete'></button>
+    <script>
+        $(document).ready(function(){
+        $('button').find('[value="create"]').click()(function(){
+        var $txt=$('<input type="text" name="passage">').text();
+        $('ul').append('<li class="amenu"><a target="passage" href="design-p1.html"><textarea class="previewer" rows="2" cols="15"></textarea></a></li>')
+                                                      });
+        $('button').find('[value="delete"]').click()(function(){
+        $('ul li:eq(-1)').remove()
+                                                      });
+                          });
+    </script>
+    <iframe name='passage' class='passage' style='float:right;' width='50%'>
+        <link type='text/css' href='passage.css' rel='stylesheet'>
+    </iframe>
+</body>
+
+</html>
